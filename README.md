@@ -25,7 +25,8 @@ the networks will be shut down after a couple of weeks.
 2. Start a login shell for the desired user (e.g. as root `su -l bob`)
 3. Download chain specification
 ```
-wget https://raw.github.com/webmaster128/tsp-networks/chainspecs/antnet.raw.json
+wget https://github.com/webmaster128/tsp-networks/raw/master/chainspecs/antnet.raw.json
+sha256sum *net.raw.json
 ```
 4. Set some environment variables
 ```

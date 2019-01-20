@@ -19,7 +19,8 @@ adduser --disabled-login --gecos "" bob && usermod -a -G docker bob
 
 ```
 su -l bob
-wget https://raw.github.com/webmaster128/tsp-networks/chainspecs/antnet.raw.json
+wget https://github.com/webmaster128/tsp-networks/raw/master/chainspecs/antnet.raw.json
+sha256sum *net.raw.json
 echo 'export NETNAME=antnet' >> ~/.profile
 echo 'export NODE_PORT=8002' >> ~/.profile
 echo 'export SUBSTRATE_VERSION=0.10.0-78bb4c0' >> ~/.profile
