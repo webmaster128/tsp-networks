@@ -1,0 +1,11 @@
+Seed 0x1b7f4909b5a0c605d2ddd047c4bc36e4a403c4b88739f4ac220b7a37be96df90 is account:
+  Public key (hex): 0x81654e5b550e99779579d5b5873a96ddbf102db97e48a1fd2a1753a2e58c678e
+  Address (SS58): 5EzN8QTXPj3kUqDpxpZxFmE6ZGAxaEoF3vjhVFpRLMxNn8zt
+
+Seed 0xfab10b3cf9ab59e68318acdf2329d4bac5e77e7ba7d839ec675ed6388c593a0f is account:
+  Public key (hex): 0x93f4f2a990d10c8a4fefd0614c9c996552657db278d16df3d96d25c4507570e6
+  Address (SS58): 5FQhfHeRdxyPsMrd8mJD33dwJ533AB3v4MdYgsXyi2yqXaME
+
+Seed 0xade93994973844a0b5b974f0c43eeedde579712362ab60ec2f58a12deac0b17e is account:
+  Public key (hex): 0x32d3cbc03d546667ca707e9e66bb25d606228818a1128f8758caa555df8e9d67
+  Address (SS58): 5DDMAh8wXWJiMGNNdKRcmnXvRFDFUfAmt6EWnv2bDyqdStds
