@@ -40,3 +40,19 @@ docker run \
   "parity/substrate:$SUBSTRATE_VERSION" \
   --chain "/data/$NETNAME.raw.json" --base-path /data/substrate_data --port "$NODE_PORT"
 ```
+
+## Start with RPC enabled
+
+```
+docker run \
+  --user "$UID" \
+  -v "$HOME":/data \
+  -p "$NODE_PORT:$NODE_PORT/tcp" \
+  -p "1$NODE_PORT:9933/tcp" \
+  -p "2$NODE_PORT:9944/tcp" \
+  "parity/substrate:$SUBSTRATE_VERSION" \
+  --chain "/data/$NETNAME.raw.json" --base-path /data/substrate_data --port "$NODE_PORT" \
+  --rpc-external --ws-external
+```
+
+This opens the RPC ports `1<NODE_PORT>` (HTTP) and `2<NODE_PORT>` (WebSocket).
