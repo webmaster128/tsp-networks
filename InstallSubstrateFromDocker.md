@@ -18,8 +18,7 @@ adduser --disabled-login --gecos "" bob && usermod -a -G docker bob
 ## One-time initialization of user
 
 ```
-su bob
-cd ~
+su -l bob
 wget https://raw.github.com/webmaster128/tsp-networks/chainspecs/antnet.raw.json
 echo 'export NETNAME=antnet' >> ~/.profile
 echo 'export NODE_PORT=8002' >> ~/.profile
