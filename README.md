@@ -22,17 +22,25 @@ the networks will be shut down after a couple of weeks.
 ## Join a network
 
 1. Pick a compatible substrate version from [dockerhub parity/substrate](https://hub.docker.com/r/parity/substrate/tags)
-2. On a Linux machine run
-
-````
-su bob
-cd ~
+2. Start a login shell for the desired user (e.g. as root `su -l bob`)
+3. Download chain specification
+```
+wget https://raw.github.com/webmaster128/tsp-networks/chainspecs/antnet.raw.json
+```
+4. Set some environment variables
+```
+echo 'export NETNAME=antnet' >> ~/.profile`
+echo 'export NODE_PORT=8002' >> ~/.profile`
+echo 'export SUBSTRATE_VERSION=0.10.0-78bb4c0' >> ~/.profile`
+source ~/.profile
 mkdir --mode=777 substrate_data
-export NODE_PORT=8002
+```
+5. Start the chain
+```
 docker run \
   --user "$UID" \
   -v "$HOME":/data \
   -p "$NODE_PORT:$NODE_PORT/tcp" \
-  parity/substrate:latest \
-  --chain /data/mychain.json --base-path /data/substrate_data --port "$NODE_PORT"
+  "parity/substrate:$SUBSTRATE_VERSION" \
+  --chain "/data/$NETNAME.raw.json" --base-path /data/substrate_data --port "$NODE_PORT"
 ```
