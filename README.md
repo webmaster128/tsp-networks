@@ -29,9 +29,9 @@ wget https://raw.github.com/webmaster128/tsp-networks/chainspecs/antnet.raw.json
 ```
 4. Set some environment variables
 ```
-echo 'export NETNAME=antnet' >> ~/.profile`
-echo 'export NODE_PORT=8002' >> ~/.profile`
-echo 'export SUBSTRATE_VERSION=0.10.0-78bb4c0' >> ~/.profile`
+echo 'export NETNAME=antnet' >> ~/.profile
+echo 'export NODE_PORT=8002' >> ~/.profile
+echo 'export SUBSTRATE_VERSION=0.10.0-78bb4c0' >> ~/.profile
 source ~/.profile
 mkdir --mode=777 substrate_data
 ```
